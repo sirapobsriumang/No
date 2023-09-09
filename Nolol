@@ -1,0 +1,19 @@
+local function callback(Text)
+ if Text == "Stop video" then
+  print ("Answer")
+elseif Text == ("Button2 text") then
+ print ("Answer2")
+ end
+end
+
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+--
+game.StarterGui:SetCore("SendNotification",  {
+ Title = "Start Recorder Video";
+ Text = "Recorder Notification";
+ Icon = "";
+ Duration = 9;
+ Button1 = "Stop Recorder";
+ Callback = NotificationBindable;
+})￼Enter
